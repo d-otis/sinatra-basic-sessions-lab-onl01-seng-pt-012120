@@ -17,7 +17,7 @@ class App < Sinatra::Base
     @session = session
     @session[:item] = params[:item]
 
-    binding.pry
+    erb :cart
   end
 
 end
